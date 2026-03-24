@@ -7,7 +7,7 @@ async function initVkUser() {
   console.log('vk-id:', vkUserId);
 }
 
-initVkUser()
+initVkUser();
 
 (function () {
   'use strict';
