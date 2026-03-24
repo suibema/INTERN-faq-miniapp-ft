@@ -1,4 +1,14 @@
-/* FAQ accordion logic */
+function initVkUser() {
+  await window.vkBridge.send('VKWebAppInit');
+  const vkUser = await window.vkBridge.send('VKWebAppGetUserInfo');
+
+  vkUserId = vkUser?.id || null;
+
+  console.log('vk-id:', vkUserId);
+}
+
+initVkUser()
+
 (function () {
   'use strict';
 
