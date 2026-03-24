@@ -1,4 +1,4 @@
-function initVkUser() {
+async function initVkUser() {
   await window.vkBridge.send('VKWebAppInit');
   const vkUser = await window.vkBridge.send('VKWebAppGetUserInfo');
 
